@@ -17,7 +17,7 @@ Valid Modes:
 * 0 - Netlib BLAS dgemm_ / Netlib CBLAS cblas_dgemm
 * 10 - cuBLAS dgemm
 * 15 - cuBLAS sgemm
-* 103-117 - Ozaki Scheme I EF with Splits 3-17
+* 103-116 - Ozaki Scheme I EF with Splits 3-17
 * 202-220 - Ozaki Scheme II Fast Mode with Moduli 2-20
 * 302-320 - Ozaki Scheme II Accurate Mode with Moduli 2-20
 
