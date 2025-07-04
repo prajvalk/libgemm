@@ -29,7 +29,7 @@ Requires the ```LIBGEMM_LIMITED_OP``` environment variable as an intercept targe
 
 It is recommended to compile the C backend for numpy_helper with the No-OpenMP flag, since parallel dgemm calls cause issues with the Ozaki Scheme II code. In the pyscf/lib/np_helper directory, run:
 ```bash
-gcc *.c -I.. -O3 -shared -fPIC -fno-openmp -o ../libnp_helper.so
+gcc *.c -I.. -O3 -shared -fPIC -fno-openmp -lopenblas -o ../libnp_helper.so
 ```
 
 ### Debug Mode
