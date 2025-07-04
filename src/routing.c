@@ -95,7 +95,7 @@ void route_gemm_call (const int gemm_mode,
             int moduli = gemm_mode - 200;
             gemmul8_gemm (TRANSA, TRANSB, M, N, K, ALPHA, A, LDA, B, LDB, BETA, C, LDC, moduli, true);
         } else if (gemm_mode >= 302 && gemm_mode <= 320) {
-            // ozII fast mode
+            // ozII accurate mode
             int moduli = gemm_mode - 300;
             gemmul8_gemm (TRANSA, TRANSB, M, N, K, ALPHA, A, LDA, B, LDB, BETA, C, LDC, moduli, false);
         } else {
